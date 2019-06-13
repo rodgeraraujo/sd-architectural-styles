@@ -25,14 +25,50 @@ ___
 
 
 #### Question 02 - Object-Based Architectural Style
-Consider the scenario where a client application has knowledge of where there are three other nodes, two of which are the same (replicas) and that when needing to perform a request for any one of the nodes, if it does not succeed, it will try another one ( not reply). Implement this scenario from the schematic below.
+Consider the scenario where a client application has knowledge of where there are three other nodes, two of which are the same (replicas) and that when needing to perform a request for any one of the nodes, if it does not succeed, it will try another one (not reply). Implement this scenario from the schematic below.
 
 ![alt text](questao_02/img/schenario_1.png "Schenario")
 
-Obs.:
+##### Obs.:
  - follow the topology above;
  - adopt socket;
 
  ##### Execution: 
  
+ ___
+
+#### Question 04 - Layered Architectural Style
+Implement a simple data replicator that ensures data consistency. Adopt the distributed system topology next to it and test as instructed below.
+(Use socket for communication between nodes.)
+
+![alt text](questao_04/img/schenario.png "Schenario")
+
+##### Obs.:
+ - follow the topology above;
+ - adopt socket;
+
+##### Additional information:
+| Table         | Field                      | Database   |
+| ------------- |:--------------------------:| ----------:|
+| tb_user       | code int, name varchar(50) | Mysql / Postgres |
+
+##### Tests:
+| Load          | Procedure                   | Results   |
+| ------------- |:--------------------------| :----------:|
+| 100 Users     | Send 100 user data insertion requests and report total time (in seconds) | 16 seconds|
+| 1000 Users     | Send 1000 user data insertion requests and report total time (in seconds) | 261 seconds|
+| 1000 Users     | By adopting threads, implement a solution that reduces the insertion time from 1000 requests and report the total time (in seconds) | 1 second |
+
+##### Requirements: 
+ - 1 - Install `docker`, guide [here](https://docs.docker.com/compose/install/).
+ - 2 - Install `docker-compose`, guide [here](https://docs.docker.com/install/).
+
+##### Execution: 
+ - 1 - Open `Docker` folder (with bash), and run the command `docker-composer up` on some folder as `docker-compose.yml` file, and wait the database starts (MySQL and PostgreSQL);
+
+- 2 - Run the `Node2` project;
+
+- 3 - Run the `Node1` project;
+
+- 4 - See results on shell of `Node1`.
  ___
