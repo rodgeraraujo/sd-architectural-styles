@@ -27,14 +27,18 @@ ___
 #### Question 02 - Object-Based Architectural Style
 Consider the scenario where a client application has knowledge of where there are three other nodes, two of which are the same (replicas) and that when needing to perform a request for any one of the nodes, if it does not succeed, it will try another one (not reply). Implement this scenario from the schematic below.
 
-![alt text](questao_02/img/schenario_1.png "Schenario")
+![alt text](questao_02/img/schenario.png "Schenario")
 
 ##### Obs.:
  - follow the topology above;
  - adopt socket;
 
  ##### Execution: 
- 
+ - 1 - Run the `Node1` project;
+
+- 2 - Run the `Node2` project;
+
+- 3 - See results on shell after run `Cliente` project.
  ___
 
 #### Question 04 - Layered Architectural Style
