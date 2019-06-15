@@ -41,6 +41,25 @@ Consider the scenario where a client application has knowledge of where there ar
 - 3 - See results on shell after run `Cliente` project.
  ___
 
+ #### Question 03 - Layered Architectural Style
+Develop a Socket-based solution for a customer who wants to communicate with a mobile device, but without the knowledge of where that device is on the network. The communication flow should follow the schematic of the topology below. (Use socket for communication between nodes and adopt your second language).
+
+![alt text](questao_03/img/schenario.png "Schenario")
+
+##### Obs.:
+ - consider op1 = sum(x,y);
+ - consider op2 = diff(x,y).
+
+ ##### Execution: 
+- 1 - Run the `Node2` project;
+
+- 2 - Run the `Node2` project;
+
+- 2 - Run the `Node3` project;
+
+- 3 - See results on shell of `Node1`.
+ ___
+
 #### Question 04 - Layered Architectural Style
 Implement a simple data replicator that ensures data consistency. Adopt the distributed system topology next to it and test as instructed below.
 (Use socket for communication between nodes.)
