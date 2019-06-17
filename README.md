@@ -95,3 +95,25 @@ Implement a simple data replicator that ensures data consistency. Adopt the dist
 
 - 4 - See results on shell of `Node1`.
  ___
+
+ #### Question 05 - Shared Architecture Based on Shared Data (Not implemented)
+By adopting a folder as data repository and files named `sum.txt` and `diff.txt` as messages sent between components (nodes), develop the distributed system that follows the topology illustrated below. (Use socket for communication between nodes.)
+
+![alt text](questao_05/img/schenario.png "Schenario")
+
+##### Obs.:
+ - consider op1 = `sum(x,y)`;
+ - consider op2 = `diff(x,y)`.
+
+ ##### Execution: 
+ 
+ ___
+
+ #### Question 6 - Shared Architecture Based on Shared Data
+The figure below demonstrates the topology of a distributed system that resembles the observer pattern. Implement it and describe the difference between your implementation and the observer pattern described in GoF. (Use socket for communication between the nodes and your second language).
+
+![alt text](questao_06/img/schenario.png "Schenario")
+
+ ##### Execution: 
+ 
+ ___
